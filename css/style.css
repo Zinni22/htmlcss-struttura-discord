@@ -36,8 +36,16 @@ header nav ul li a{
 
 
 /* MAIN */
-
-
+main header{
+    min-height: 300px;
+}
+.primo-elemento{
+    width:70%;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -58,5 +66,13 @@ header nav ul li a{
 }
 .debug header > .menu{
     background:goldenrod;
+    border:1px dashed black;
+}
+.debug main header{
+    background-color: darkblue;
+}
+.primo-elemento{
+    height: 100px;
+    background-color: plum;
     border:1px dashed black;
 }
