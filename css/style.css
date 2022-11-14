@@ -26,7 +26,7 @@
 header{
     min-height: 40px;
 }
-header nav ul{
+header nav ul, .lista nav ul{
     display: flex;
     list-style-type: none;
 }
@@ -45,6 +45,9 @@ header nav ul li a{
 /* MAIN */
 main header, main section{
     min-height: 500px;
+}
+main section:nth-last-of-type(1){
+    min-height:800px;
 }
 .primo-elemento{
     width:60%;
@@ -66,10 +69,31 @@ main header, main section{
 }
 
 
-
-
-
-
+/* FOOTER */
+footer section{
+    min-height:500px;
+}
+footer section:nth-last-of-type(1){
+    min-height:70px;
+}
+.contact{
+    width:30%;
+}
+.lista{
+    width:70%;
+}
+.lista nav ul li{
+    width:calc(100%/4)
+    
+}
+footer hr{
+    background-color: white;
+}
+footer section .menu{
+    min-height:40px;
+    align-self: flex-end;
+    align-items: center;
+}
 
 
 
@@ -84,10 +108,11 @@ main header, main section{
     background:goldenrod;
     border:1px dashed black;
 }
+
+
 .debug main header{
     background-color: darkblue;
 }
-
 .debug main header .primo-elemento,
 .aside,
 .content,
@@ -103,5 +128,31 @@ main header, main section{
     background-color: rgb(78, 150, 250);
 }
 .debug main section .green{
+    height:700px;
     background-color: green;
+}
+
+
+
+.debug footer{
+    background-color: rgb(44, 44, 44);
+}
+.debug footer section .contact{
+    height:400px;
+    background-color: coral;
+    border:1px dashed black;
+}
+.debug footer section .lista ul li{
+    height:400px;
+    background-color:rgb(0, 157, 134);
+    border:1px dashed white;
+}
+.debug footer section .menu{
+    background-color: aquamarine;
+}
+.debug footer section .menu span{
+    background-color: pink;
+    border:1px dashed black;
+    padding:5px;
+    font-size: 10px;
 }
