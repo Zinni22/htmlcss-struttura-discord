@@ -3,3 +3,60 @@
     padding:0;
     box-sizing: border-box;
 }
+
+
+/* REGOLE GENERALI */
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.flex-container{
+    display:flex;
+}
+
+/* HEADER */
+header{
+    min-height: 40px;
+    padding:15px;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    margin: 0 5px;
+}
+.menu{
+    justify-content: space-between;
+}
+
+
+
+
+
+/* MAIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+.debug header{
+    background-color: lightblue;
+}
+.debug header > .menu{
+    background:goldenrod;
+    border:1px dashed black;
+}
