@@ -8,16 +8,23 @@
 /* REGOLE GENERALI */
 .container{
     max-width: 1200px;
-    margin:0 auto;
+    width:100%;
 }
 .flex-container{
     display:flex;
 }
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 /* HEADER */
 header{
     min-height: 40px;
-    padding:15px;
 }
 header nav ul{
     display: flex;
@@ -36,18 +43,27 @@ header nav ul li a{
 
 
 /* MAIN */
-main header{
-    min-height: 300px;
+main header, main section{
+    min-height: 500px;
 }
 .primo-elemento{
+    width:60%;
+}
+.grey{
+    background-color: lightgrey;
+}
+.white{
+    background-color: white;
+}
+.content{
     width:70%;
 }
-.center{
-    justify-content: center;
-    align-items: center;
+.aside{
+    width:30%;
 }
-
-
+.green{
+    width:100%;
+}
 
 
 
@@ -71,8 +87,21 @@ main header{
 .debug main header{
     background-color: darkblue;
 }
-.primo-elemento{
-    height: 100px;
+
+.debug main header .primo-elemento,
+.aside,
+.content,
+.green{
+    height: 400px;
     background-color: plum;
     border:1px dashed black;
+}
+.debug main section .aside{
+    background-color: pink;
+}
+.debug main section .content{
+    background-color: rgb(78, 150, 250);
+}
+.debug main section .green{
+    background-color: green;
 }
