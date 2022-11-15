@@ -9,6 +9,7 @@
 .container{
     max-width: 1200px;
     width:100%;
+    margin: 0 auto;
 }
 .flex-container{
     display:flex;
@@ -24,7 +25,7 @@
 
 /* HEADER */
 header{
-    min-height: 40px;
+    padding:15px;
 }
 header nav ul, .lista nav ul{
     display: flex;
@@ -33,9 +34,11 @@ header nav ul, .lista nav ul{
 header nav ul li a{
     text-decoration: none;
     margin: 0 5px;
+    color:black;
 }
 .menu{
     justify-content: space-between;
+    padding:5px;
 }
 
 
@@ -44,10 +47,10 @@ header nav ul li a{
 
 /* MAIN */
 main header, main section{
-    min-height: 500px;
+    padding:15px;
 }
-main section:nth-last-of-type(1){
-    min-height:800px;
+main header{
+    border-bottom: 4px solid lightblue;
 }
 .primo-elemento{
     width:60%;
@@ -64,17 +67,20 @@ main section:nth-last-of-type(1){
 .aside{
     width:30%;
 }
-.green{
+.last-content{
     width:100%;
 }
 
 
 /* FOOTER */
+footer{
+    background-color: rgb(44, 44, 44);
+}
 footer section{
-    min-height:500px;
+    padding:15px;
 }
 footer section:nth-last-of-type(1){
-    min-height:70px;
+    padding-bottom: 0;
 }
 .contact{
     width:30%;
@@ -83,17 +89,20 @@ footer section:nth-last-of-type(1){
     width:70%;
 }
 .lista nav ul li{
-    width:calc(100%/4)
-    
+    width:calc(100%/4)  
 }
 footer hr{
     background-color: white;
 }
 footer section .menu{
-    min-height:40px;
     align-self: flex-end;
     align-items: center;
 }
+footer section .menu span{
+    padding:5px;
+    font-size: 10px;
+}
+
 
 
 
@@ -116,7 +125,7 @@ footer section .menu{
 .debug main header .primo-elemento,
 .aside,
 .content,
-.green{
+.last-content{
     height: 400px;
     background-color: plum;
     border:1px dashed black;
@@ -127,23 +136,21 @@ footer section .menu{
 .debug main section .content{
     background-color: rgb(78, 150, 250);
 }
-.debug main section .green{
-    height:700px;
+.debug main section .last-content{
+    height:800px;
     background-color: green;
 }
 
 
 
-.debug footer{
-    background-color: rgb(44, 44, 44);
-}
+
 .debug footer section .contact{
-    height:400px;
+    height:500px;
     background-color: coral;
     border:1px dashed black;
 }
 .debug footer section .lista ul li{
-    height:400px;
+    height:500px;
     background-color:rgb(0, 157, 134);
     border:1px dashed white;
 }
@@ -153,6 +160,4 @@ footer section .menu{
 .debug footer section .menu span{
     background-color: pink;
     border:1px dashed black;
-    padding:5px;
-    font-size: 10px;
 }
